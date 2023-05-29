@@ -7,7 +7,7 @@ export default class SignInPageObjects {
   static getPasswordInput() {
     return cy.get('#password');
   }
-  static getSignIntButton() {
+  static getSignInButton() {
     return cy.get('#btnLogin');
   }
 }

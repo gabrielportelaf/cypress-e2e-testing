@@ -1,6 +1,7 @@
 {
-  "userSignInData": 
+  "userSignData": 
   {
+    "name": "User test",
     "email": "automationpratice@qa.team",
     "password": "123456"
   }

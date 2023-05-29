@@ -6,7 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cypress:open": "cypress open",
-    "cypress:run": ""
+    "cy:run": "yarn cypress run",
+    "cypress:open:dev": "yarn cypress open --config-file cypress/cypress-config/cypress.dev.js",
+    "cypress:open:hml": "yarn cypress open --config-file cypress/cypress-config/cypress.hml.js",
+    "cypress:open:stg": "yarn cypress open --config-file cypress/cypress-config/cypress.stg.js",
+    "cy:run-chrome": "cypress run --browser chrome",
+    "cy:run-firefox": "cypress run --browser firefox"
   },
   "author": "",
   "license": "ISC",
