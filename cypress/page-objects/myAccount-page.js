@@ -7,4 +7,7 @@ export default class MyAccountPageObjects {
   static getBodyEmail(text) {
     return cy.get('body').contains(text);
   }
+  static getOkButton(){
+    return cy.get('.swal2-confirm');
+  }
 }

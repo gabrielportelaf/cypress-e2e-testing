@@ -21,9 +21,9 @@ describe("Sign up flow - test cases", () => {
       HomePageActions.menuSignUp();
       cy.wait(4000);
       signUpActions.signup( 
-        testData.userSignData.name, 
-        testData.userSignData.email,
-        testData.userSignData.password
+        testData.userSignUpData.name, 
+        testData.userSignUpData.email,
+        testData.userSignUpData.password
       );
     });
     it("TC-02 - should be able to sign in", () => {

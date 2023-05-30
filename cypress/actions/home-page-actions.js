@@ -9,6 +9,9 @@ class HomePageActions {
   menuSignUp() {
     HomePageObjects.getMobileSignUpLink().should("exist").click();
   }
+  menuSignOut(){
+    HomePageObjects.getMobileSignOutLink().should("exist").click();
+  }
 }
 
 export default new HomePageActions();

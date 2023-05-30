@@ -3,6 +3,7 @@
 import HomePageObjects from "../page-objects/home-page";
 import HomePageActions from "../actions/home-page-actions";
 import SignInActions from "../actions/signIn-actions";
+import MyAccountPageObjects from "../page-objects/myAccount-page";
 
 describe("Sign in flow - test cases", () => {
   let testData;
@@ -12,7 +13,7 @@ describe("Sign in flow - test cases", () => {
     });
   });
 
-  describe("New user - positive scenarios", () => {
+  describe("New user", () => {
     beforeEach(() => {
       HomePageObjects.open();
     });
@@ -21,10 +22,10 @@ describe("Sign in flow - test cases", () => {
       HomePageActions.menuSignIn();
       cy.wait(4000);
       SignInActions.signin(
-        testData.userSignData.email,
-        testData.userSignData.password
+        testData.userSignInData.email,
+        testData.userSignInData.password
       );
-      cy.wait(4000);
+      MyAccountPageObjects.getOkButton().click();
     });
   });
 });
